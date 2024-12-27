@@ -1,26 +1,25 @@
 import React from "react";
-import Navbar from "./Navbar";
 const Homepage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
-      {/* Navbar */}
-      <Navbar />
-
-      {/* Hero Section */}
-      <section className="bg-blue-500 text-white py-20">
-        <div className="container mx-auto text-center">
-          <h2 className="text-4xl font-bold mb-4">Dona il sangue, salva una vita</h2>
-          <p className="text-lg mb-8">
-            Unisciti a noi per fare la differenza nella vita delle persone.
-          </p>
-          <a
-            href="#donate"
-            className="bg-white text-blue-500 px-6 py-3 rounded-full font-semibold hover:bg-gray-200"
-          >
-            Scopri di più
-          </a>
+      <div className='max-w-[1640px] mx-auto overflow-hidden'>
+      <div className='max-h-[500px] relative'>
+        {/* Overlay */}
+        <div className='absolute w-full h-full text-gray-200 max-h-[500px] bg-black/40 flex flex-col justify-center'>
+          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg'>
+            Dona il <span className='text-red-800'>Sangue</span>,
+          </h1>
+          <h1 className='px-4 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold drop-shadow-lg'>
+            <span className='text-red-800'>Salva</span> una Vita
+          </h1>
         </div>
-      </section>
+        <img
+          className='w-full max-h-[500px] object-cover'
+          src='https://citizenadvocates.net/wp-content/uploads/2024/01/donating-blood_donation-areas-in-New-York_Citizen-Advocates-community-action-850x575.png'
+          alt='/'
+        />
+      </div>
+    </div>
 
       {/* About Section */}
       <section id="about" className="py-20">

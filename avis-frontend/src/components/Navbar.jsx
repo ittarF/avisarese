@@ -11,15 +11,19 @@ function Navbar() {
   };
 
   return (
-    <nav className="text-blue-600 py-8 relative font-sans">
+    <nav className="text-blue-500 py-8 relative font-sans">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="/">
-        <img
-          src={logo}
-          alt="AVIS Arese"
-          className="h-12 hover:scale-110 transition-all"
-        />
+        <a href="/" className="flex font-semibold items-center text-xl text-semib hover:scale-110 transition-all">
+          <img
+            src={logo}
+            alt="AVIS Arese"
+            className="h-12 "
+          />
+          <div className="flex flex-col">
+            <h1>Comunale</h1>
+            <h1>Arese</h1>
+          </div>
         </a>
         {/* Menu Hamburger - for small screens */}
         <div className="md:hidden flex items-center space-x-4">
@@ -71,7 +75,7 @@ function Navbar() {
             <a href="#">Donazione</a>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <a href="#">Contatti</a>
+            <a href="/Contatti">Contatti</a>
           </li>
           {/* Social Media Icons */}
           <li className="p-4 flex justify-center space-x-6">
