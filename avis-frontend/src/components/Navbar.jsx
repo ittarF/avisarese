@@ -97,7 +97,7 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen ? (
-        <div className="md:hidden pt-4">
+        <div className="md:hidden pt-4 pl-4">
         <ul className="flex flex-col space-y-4">
           <li>
             <a href="#" className="text-blue-600 text-lg">
