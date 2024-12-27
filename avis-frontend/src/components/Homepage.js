@@ -1,20 +1,10 @@
 import React from "react";
-
+import Navbar from "./Navbar";
 const Homepage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
       {/* Navbar */}
-      <header className="bg-red-600 text-white py-4">
-        <div className="container mx-auto flex justify-between items-center">
-          <h1 className="text-2xl font-bold">AVIS Comunale</h1>
-          <nav className="space-x-4">
-            <a href="#about" className="hover:underline">Chi Siamo</a>
-            <a href="#donate" className="hover:underline">Donazione</a>
-            <a href="#faq" className="hover:underline">FAQ</a>
-            <a href="#news" className="hover:underline">News</a>
-          </nav>
-        </div>
-      </header>
+      <Navbar />
 
       {/* Hero Section */}
       <section className="bg-blue-500 text-white py-20">

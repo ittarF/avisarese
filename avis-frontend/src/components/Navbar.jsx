@@ -14,15 +14,33 @@ function Navbar() {
     <nav className="text-blue-600 py-8 relative font-sans">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
+        <a href="/">
         <img
           src={logo}
           alt="AVIS Arese"
-          className="h-12 hover:scale-110 transition-all fixed left-0 ml-8"
+          className="h-12 hover:scale-110 transition-all"
         />
-
+        </a>
         {/* Menu Hamburger - for small screens */}
-        <div className="md:hidden">
-          <button className="text-blue-600 fixed right-4 top-3" onClick={toggleMenu}>
+        <div className="md:hidden flex items-center space-x-4">
+          {/* Social Media Icons - for small screens */}
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-blue-500 "
+          >
+            <FontAwesomeIcon icon={faFacebook} size="xl" />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-pink-500"
+          >
+            <FontAwesomeIcon icon={faInstagram} size="xl" />
+          </a>
+          <button className="text-blue-600 " onClick={toggleMenu}>
             <svg
               className="w-10 h-10 hover:scale-125 transition-all"
               fill="none"
@@ -38,39 +56,21 @@ function Navbar() {
             </svg>
           </button>
         </div>
-        {/* Social Media Icons - for small screens */}
-        <div className="md:hidden fixed right-16 top-5 space-x-4 pr-2">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-blue-500"
-          >
-            <FontAwesomeIcon icon={faFacebook} size="xl" />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-pink-500"
-          >
-            <FontAwesomeIcon icon={faInstagram} size="xl" />
-          </a>
-        </div>
+
         {/* Desktop Menu */}
         <ul
           className={`hidden md:flex items-center font-semibold text-lg absolute right-4 top-1/2 transform -translate-y-1/2`}
         >
-          <li className="p-4 rounded-md transition-all cursor-pointer">
+          <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Home</a>
           </li>
-          <li className="p-4 rounded-md transition-all cursor-pointer">
+          <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Chi Siamo</a>
           </li>
-          <li className="p-4 rounded-md transition-all cursor-pointer">
+          <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Donazione</a>
           </li>
-          <li className="p-4 rounded-md transition-all cursor-pointer">
+          <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Contatti</a>
           </li>
           {/* Social Media Icons */}
@@ -97,8 +97,8 @@ function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen ? (
-        <div className="md:hidden">
-        <ul className="flex flex-col space-y-4 absolute right-0 left-0 p-4 top-16 z-10">
+        <div className="md:hidden pt-4">
+        <ul className="flex flex-col space-y-4">
           <li>
             <a href="#" className="text-blue-600 text-lg">
             <FontAwesomeIcon icon={faHouse} size="lg" className="pr-3"/>
