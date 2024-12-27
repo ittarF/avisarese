@@ -66,7 +66,7 @@ function Navbar() {
           className={`hidden md:flex items-center font-semibold text-lg absolute right-4 top-1/2 transform -translate-y-1/2`}
         >
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <a href="#">Home</a>
+            <a href="/">Home</a>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Chi Siamo</a>
@@ -83,7 +83,7 @@ function Navbar() {
               href="https://facebook.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-500"
+              className="hover:text-blue-800 hover:scale-125 transition-all"
             >
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
@@ -91,7 +91,7 @@ function Navbar() {
               href="https://instagram.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-pink-500"
+              className="hover:text-pink-500 hover:scale-125 transition-all"
             >
               <FontAwesomeIcon icon={faInstagram} size="lg" />
             </a>
@@ -104,7 +104,7 @@ function Navbar() {
         <div className="md:hidden pt-4 pl-4">
         <ul className="flex flex-col space-y-4">
           <li>
-            <a href="#" className="text-blue-600 text-lg">
+            <a href="/" className="text-blue-600 text-lg">
             <FontAwesomeIcon icon={faHouse} size="lg" className="pr-3"/>
               Home
             </a>

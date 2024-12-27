@@ -1,4 +1,5 @@
 import React from "react";
+
 const Homepage = () => {
   return (
     <div className="bg-gray-100 min-h-screen">
