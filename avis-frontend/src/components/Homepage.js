@@ -71,12 +71,6 @@ frequenti.
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-red-600 text-white py-4">
-        <div className="container mx-auto text-center">
-          <p>&copy; 2024 AVIS Comunale. Tutti i diritti riservati.</p>
-        </div>
-      </footer>
     </div>
   );
 };
