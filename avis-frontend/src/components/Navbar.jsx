@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import logo from "../assets/Logo_AVIS.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
@@ -11,10 +12,10 @@ function Navbar() {
   };
 
   return (
-    <nav className="text-blue-500 py-8 relative font-sans">
+    <nav className="text-blue-500 py-4 relative font-sans flex justify-between items-center">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <a href="/" className="flex font-semibold items-center text-xl text-semib hover:scale-110 transition-all">
+        <Link to="/" className="flex font-semibold items-center text-xl text-semib hover:scale-110 transition-all">
           <img
             src={logo}
             alt="AVIS Arese"
@@ -24,7 +25,7 @@ function Navbar() {
             <h1>Comunale</h1>
             <h1>Arese</h1>
           </div>
-        </a>
+        </Link>
         {/* Menu Hamburger - for small screens */}
         <div className="md:hidden flex items-center space-x-4">
           {/* Social Media Icons - for small screens */}
@@ -63,10 +64,10 @@ function Navbar() {
 
         {/* Desktop Menu */}
         <ul
-          className={`hidden md:flex items-center font-semibold text-lg absolute right-4 top-1/2 transform -translate-y-1/2`}
+          className={`hidden md:flex items-center font-semibold text-lg`}
         >
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Chi Siamo</a>
@@ -75,7 +76,7 @@ function Navbar() {
             <a href="#">Donazione</a>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <a href="/Contatti">Contatti</a>
+            <Link to="/Contatti">Contatti</Link>
           </li>
           {/* Social Media Icons */}
           <li className="p-4 flex justify-center space-x-6">
