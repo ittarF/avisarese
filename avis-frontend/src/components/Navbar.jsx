@@ -16,7 +16,7 @@ function Navbar() {
     <nav className="text-blue-500 py-4 relative font-sans flex flex-col bg-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <NavLink to="/" className="flex font-semibold items-center text-xl">
+        <NavLink to="/" className="flex font-semibold items-center text-xl hover:scale-110 transition-all">
           <img src={logo} alt="AVIS Arese" className="h-12" />
           <div className="flex flex-col">
             <h1>Comunale</h1>
