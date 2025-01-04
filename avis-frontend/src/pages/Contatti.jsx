@@ -94,7 +94,7 @@ function Contatti() {
                 className="h-20 w-20"
             />
             </div>
-            <h2 className="text-xl font-bold text-red-500">Centro trasfusionale "Formentano"</h2>
+            <h2 className="text-xl font-bold text-red-500">Centro Trasfusionale "Formentano"</h2>
             <p className="mt-2 text-gray-700">Via Bonaparte, 2<br />20812 Limbiate (MB)</p>
             <p className="mt-2 text-gray-700"><FontAwesomeIcon icon={faPhone} size="sm" /> 02 996 7731</p>
             <p className="mt-2 text-gray-700"><FontAwesomeIcon icon={faClock} size="sm" /> Orari</p>
