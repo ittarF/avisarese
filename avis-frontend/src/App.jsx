@@ -11,8 +11,8 @@ function App() {
       < Navbar />
 
         <Routes>
-          <Route path="/" element={<Homepage />} />
           <Route path="/Contatti" element={<Contatti />} />
+          <Route path="/" element={<Homepage />} />
         </Routes>
       <Footer />
     </Router>

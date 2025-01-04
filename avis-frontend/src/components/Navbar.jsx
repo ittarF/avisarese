@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../assets/Logo_AVIS.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 import { faHouse, faHandHoldingDroplet, faEnvelope, faPeopleGroup } from "@fortawesome/free-solid-svg-icons";
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,28 +13,24 @@ function Navbar() {
   };
 
   return (
-    <nav className="text-blue-500 py-4 relative font-sans flex justify-between items-center">
+    <nav className="text-blue-500 py-4 relative font-sans flex flex-col bg-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
-        <Link to="/" className="flex font-semibold items-center text-xl text-semib hover:scale-110 transition-all">
-          <img
-            src={logo}
-            alt="AVIS Arese"
-            className="h-12 "
-          />
+        <NavLink to="/" className="flex font-semibold items-center text-xl">
+          <img src={logo} alt="AVIS Arese" className="h-12" />
           <div className="flex flex-col">
             <h1>Comunale</h1>
             <h1>Arese</h1>
           </div>
-        </Link>
-        {/* Menu Hamburger - for small screens */}
+        </NavLink>
+        
+        {/* Social and Hamburger */}
         <div className="md:hidden flex items-center space-x-4">
-          {/* Social Media Icons - for small screens */}
           <a
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="hover:text-blue-500 "
+            className="hover:text-blue-800"
           >
             <FontAwesomeIcon icon={faFacebook} size="xl" />
           </a>
@@ -45,7 +42,7 @@ function Navbar() {
           >
             <FontAwesomeIcon icon={faInstagram} size="xl" />
           </a>
-          <button className="text-blue-600 " onClick={toggleMenu}>
+          <button className="text-blue-600" onClick={toggleMenu}>
             <svg
               className="w-10 h-10 hover:scale-125 transition-all"
               fill="none"
@@ -67,7 +64,7 @@ function Navbar() {
           className={`hidden md:flex items-center font-semibold text-lg`}
         >
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <Link to="/">Home</Link>
+            <NavLink to="/">Home</NavLink>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
             <a href="#">Chi Siamo</a>
@@ -100,37 +97,38 @@ function Navbar() {
         </ul> 
       </div>
 
-      {/* Mobile Menu */}
-      {isOpen ? (
-        <div className="md:hidden pt-4 pl-4">
-        <ul className="flex flex-col space-y-4">
-          <li>
-            <a href="/" className="text-blue-600 text-lg">
-            <FontAwesomeIcon icon={faHouse} size="lg" className="pr-3"/>
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-blue-600 text-lg">
-            <FontAwesomeIcon icon={faPeopleGroup} size="lg" className="pr-2"/>
-              Chi Siamo
-            </a>
+{/* Mobile Menu */}
+ {isOpen && (
+        <div className="flex flex-col md:hidden bg-blue-50 shadow-md mt-2">
+          <ul className="flex flex-col space-y-4 p-4">
+            <li>
+              <a href="/" className="flex items-center text-blue-600 text-lg">
+                <FontAwesomeIcon icon={faHouse} size="lg" className="pr-3" />
+                Home
+              </a>
             </li>
-          <li>
-            <a href="#" className="text-blue-600 text-lg">
-            <FontAwesomeIcon icon={faHandHoldingDroplet} size="lg" className="pr-3"/>
-              Donazione
-            </a>
-          </li>
-          <li>
-            <a href="#" className="text-blue-600 text-lg">
-            <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-3"/>
-              Contatti
-            </a>
-          </li>
-        </ul>
+            <li>
+              <a href="#" className="flex items-center text-blue-600 text-lg">
+                <FontAwesomeIcon icon={faPeopleGroup} size="lg" className="pr-2" />
+                Chi Siamo
+              </a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center text-blue-600 text-lg">
+                <FontAwesomeIcon icon={faHandHoldingDroplet} size="lg" className="pr-3" />
+                Donazione
+              </a>
+            </li>
+            <li>
+              <a href="#" className="flex items-center text-blue-600 text-lg">
+                <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-3" />
+                Contatti
+              </a>
+            </li>
+          </ul>
         </div>
-      ) : null}
+      )}
+
     </nav>
   );
 }
