@@ -19,8 +19,8 @@ function Navbar() {
         <NavLink to="/" className="flex font-semibold items-center text-xl hover:scale-110 transition-all">
           <img src={logo} alt="AVIS Arese" className="h-12" />
           <div className="flex flex-col">
-            <h1>Comunale</h1>
-            <h1>Arese</h1>
+            <h1 className="text-sm">Comunale</h1>
+            <h1 className="text-sm">Arese ODV</h1>
           </div>
         </NavLink>
         
