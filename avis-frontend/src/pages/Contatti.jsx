@@ -3,10 +3,12 @@ import Map from "../components/Map";
 import schedIcon from "../assets/schedule.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faClock, faPhone } from "@fortawesome/free-solid-svg-icons";
+import PageWrapper from "../components/PageWrapper";
 
 function Contatti() {
 
     return (
+        <PageWrapper>
     <div className="bg-blue-100 py-8">
         {/* I Nostri Contatti */}
         <div className="bg-white shadow-lg rounded-xl text-center ml-8  mr-8"> 
@@ -122,6 +124,7 @@ function Contatti() {
         <Map />
 
     </div>
+    </PageWrapper>
     );
 }
     

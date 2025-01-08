@@ -1,23 +1,18 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
-import Contatti from "./pages/Contatti";
 import Footer from "./components/Footer";
-import Donazione from "./pages/Donazione";
+import AnimatedRoutes from './components/AnimatedRoutes';
 
 function App() {
   return (
+    <div className="bg-blue-100">
     <Router>
       < Navbar />
-
-        <Routes>
-          <Route path="/Contatti" element={<Contatti />} />
-          <Route path="/Donazione" element={<Donazione />} />
-          <Route path="/" element={<Homepage />} />
-        </Routes>
+        <AnimatedRoutes />
       <Footer />
     </Router>
+    </div>
   );
 }
 
