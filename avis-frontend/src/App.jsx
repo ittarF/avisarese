@@ -4,6 +4,7 @@ import Homepage from "./pages/Homepage";
 import Navbar from "./components/Navbar";
 import Contatti from "./pages/Contatti";
 import Footer from "./components/Footer";
+import Donazione from "./pages/Donazione";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
 
         <Routes>
           <Route path="/Contatti" element={<Contatti />} />
+          <Route path="/Donazione" element={<Donazione />} />
           <Route path="/" element={<Homepage />} />
         </Routes>
       <Footer />
