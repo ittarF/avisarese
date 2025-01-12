@@ -70,10 +70,10 @@ function Navbar() {
             <a href="#">Chi Siamo</a>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-          <Link to="/Donazione">Donazione</Link>
+          <Link to="/donazione">Donazione</Link>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <Link to="/Contatti">Contatti</Link>
+            <Link to="/contatti">Contatti</Link>
           </li>
           {/* Social Media Icons */}
           <li className="p-4 flex justify-center space-x-6">
@@ -114,13 +114,13 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <Link to="/Donazione" className="flex items-center text-blue-600 text-lg">
+              <Link to="/donazione" className="flex items-center text-blue-600 text-lg">
                 <FontAwesomeIcon icon={faHandHoldingDroplet} size="lg" className="pr-3" />
                 Donazione
               </Link>
             </li>
             <li>
-              <Link to="/Contatti" className="flex items-center text-blue-600 text-lg">
+              <Link to="/contatti" className="flex items-center text-blue-600 text-lg">
                 <FontAwesomeIcon icon={faEnvelope} size="lg" className="pr-3" />
                 Contatti
               </Link>
