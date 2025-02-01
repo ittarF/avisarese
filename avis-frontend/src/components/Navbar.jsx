@@ -67,7 +67,7 @@ function Navbar() {
             <NavLink to="/">Home</NavLink>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
-            <a href="#">Chi Siamo</a>
+            <a href="/chisiamo">Chi Siamo</a>
           </li>
           <li className="p-4 rounded-md transition-all cursor-pointer hover:scale-125">
           <Link to="/donazione">Donazione</Link>
@@ -108,7 +108,7 @@ function Navbar() {
               </a>
             </li>
             <li>
-              <a href="#" className="flex items-center text-blue-600 text-lg">
+              <a href="/chisiamo" className="flex items-center text-blue-600 text-lg">
                 <FontAwesomeIcon icon={faPeopleGroup} size="lg" className="pr-2" />
                 Chi Siamo
               </a>
