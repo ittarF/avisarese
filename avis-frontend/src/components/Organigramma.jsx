@@ -2,9 +2,9 @@ import React from 'react';
 
 const Organigramma = () => {
   return (
-        <table className="min-w-full bg-gray-100 rounded-xl">
+        <table className="min-w-full bg-white rounded-xl">
           <thead>
-          <th colSpan="2" className="border-b-2 border-gray-300 p-4 text-center text-lg font-semibold">
+          <th colSpan="2" className="drop-shadow-lg p-4 text-center text-lg font-semibold">
             ORGANIGRAMMA
           </th>
           </thead>
