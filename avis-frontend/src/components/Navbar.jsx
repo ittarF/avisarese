@@ -27,7 +27,7 @@ function Navbar() {
         {/* Social and Hamburger */}
         <div className="md:hidden flex items-center space-x-4">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/avis.arese"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-blue-800"
@@ -35,7 +35,7 @@ function Navbar() {
             <FontAwesomeIcon icon={faFacebook} size="xl" />
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/avis.arese/"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:text-pink-500"
@@ -78,7 +78,7 @@ function Navbar() {
           {/* Social Media Icons */}
           <li className="p-4 flex justify-center space-x-6">
             <a
-              href="https://facebook.com"
+              href="https://www.facebook.com/avis.arese"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-800 hover:scale-125 transition-all"
@@ -86,7 +86,7 @@ function Navbar() {
               <FontAwesomeIcon icon={faFacebook} size="lg" />
             </a>
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/avis.arese/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-pink-500 hover:scale-125 transition-all"
