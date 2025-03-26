@@ -11,36 +11,34 @@ const Organigramma = () => {
           <tbody>
             <tr>
               <td className="border-b border-gray-300 p-4 align-top">Presidente</td>
-              <td className="border-b border-gray-300 p-4">Roberto Abruzzi</td>
+              <td className="border-b border-gray-300 p-4">Barbera C. Giuliana</td>
             </tr>
             <tr>
-              <td className="border-b border-gray-300 p-4 align-top">Vice Presidente</td>
-              <td className="border-b border-gray-300 p-4">
-                Giuliana Barbera <br />
-                Alessandro Brambilla
-              </td>
+              <td className="border-b border-gray-300 p-4 align-top">Vice presidente</td>
+              <td className="border-b border-gray-300 p-4"> Abruzzi Roberto </td>
+            </tr>
+            <tr>
+              <td className="border-b border-gray-300 p-4 align-top">Vice presidente vicario</td>
+              <td className="border-b border-gray-300 p-4"> Tuttolomondo Anneliese </td>
             </tr>
             <tr>
               <td className="border-b border-gray-300 p-4 align-top">Tesoriere</td>
-              <td className="border-b border-gray-300 p-4">Carlo Serventi</td>
+              <td className="border-b border-gray-300 p-4">Germano Carmela</td>
             </tr>
             <tr>
               <td className="border-b border-gray-300 p-4 align-top">Segretaria</td>
-              <td className="border-b border-gray-300 p-4">Silvia Marchesi</td>
+              <td className="border-b border-gray-300 p-4">Cicognini Vittoria</td>
             </tr>
             <tr>
               <td className="border-collapse border-gray-300 p-4 align-top">Consiglieri</td>
               <td className="border-collapse border-gray-300 p-4">
-                Giorgio Camozzi<br />
-                Claudio Rossato<br />
-                Inder Bellini<br />
-                Valerio Carsetti<br />
-                Francesca Grotto<br />
-                Francesco D'Acquaro<br />
-                Giovanni Reina<br />
-                Angelo Bracchi<br />
-                Franco Bruno<br />
+                Grotto Francesca<br />
+                D'Acquaro Francesco
               </td>
+            </tr>
+            <tr>
+              <td className="border-b border-gray-300 p-4 align-top">Addetto contabile e bilancio</td>
+              <td className="border-b border-gray-300 p-4">Serventi Carlo</td>
             </tr>
           </tbody>
         </table>
