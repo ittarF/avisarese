@@ -10,20 +10,20 @@ const DonationSteps = () => {
       description: 'Per diventare donatore puoi procedere in due modi:',
       subdescription: [
         'Recarti direttamente in sede presso Via Caduti, 2 Arese',
-        'Scaricare il modulo, compilarlo e inviarlo via email all\'indirizzo: iscrizioni@avismonza.it'
+        'Scaricare il modulo, compilarlo e inviarlo via email all\'indirizzo: avis.arese@gmail.com'
       ],
       buttonText: <Link 
-      to="/donazione" 
-      className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors"
+        to="/donazione" 
+        className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors"
       >
-      Requisiti per Poter Donare
+        Requisiti per poter donare
       </Link>,
       downloadButton: {
         text: 'Scarica Modulo Iscrizione',
         link: '/documents/modulo_iscrizione_avis.pdf'
       },
       color: 'bg-blue-100 text-blue-800'
-      },
+    },
     {
       icon: Stethoscope,
       title: 'Visita d\'idoneità',
@@ -40,7 +40,12 @@ const DonationSteps = () => {
       icon: GlassWater,
       title: 'Prenota Donazione',
       description: 'Prenota la tua donazione di sangue, plasma o emocomponenti. Il prelievo è effettuato da personale qualificato.',
-      buttonText: 'Prenota Donazione',
+      buttonText: <Link 
+      to="/contatti" 
+      className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors"
+    >
+      Prenota la donazione
+    </Link>,
       color: 'bg-red-100 text-red-800'
     },
     {
@@ -60,12 +65,12 @@ const DonationSteps = () => {
         {steps.map((step, index) => (
           <div 
             key={index} 
-            className="flex items-center space-x-6 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
+            className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-6 p-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out"
           >
             <div className={`p-4 rounded-full ${step.color}`}>
               <step.icon size={48} className="mx-auto" />
             </div>
-            <div className="flex-grow">
+            <div className="flex-grow text-center md:text-left">
               <h3 className="text-2xl font-semibold mb-3 text-gray-800">{step.title}</h3>
               <p className="text-gray-600 mb-4">{step.description}</p>
               {step.subdescription && (
@@ -75,21 +80,21 @@ const DonationSteps = () => {
                   ))}
                 </ul>
               )}
-              <div className="flex space-x-4">
+              <div className="flex justify-center md:justify-start space-x-4">
                 {step.buttonText && (
                   <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-colors">
                     {step.buttonText}
                   </button>
                 )}
                 {step.downloadButton && (
-                <a 
+                  <a 
                     href={step.downloadButton.link} 
-                    download='modulo_iscrizione_avis_arese' 
+                    download="modulo_iscrizione_avis_arese" 
                     className="flex items-center bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-                >
+                  >
                     <Download className="mr-2" size={20} />
                     {step.downloadButton.text}
-                </a>
+                  </a>
                 )}
               </div>
             </div>

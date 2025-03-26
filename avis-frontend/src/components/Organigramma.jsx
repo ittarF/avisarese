@@ -30,8 +30,8 @@ const Organigramma = () => {
               <td className="border-b border-gray-300 p-4">Cicognini Vittoria</td>
             </tr>
             <tr>
-              <td className="border-collapse border-gray-300 p-4 align-top">Consiglieri</td>
-              <td className="border-collapse border-gray-300 p-4">
+              <td className="border-b border-gray-300 p-4 align-top">Consiglieri</td>
+              <td className="border-b border-gray-300 p-4">
                 Grotto Francesca<br />
                 D'Acquaro Francesco
               </td>
